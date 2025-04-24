@@ -1,0 +1,151 @@
+<!-- Header Section Start -->
+<header class="header-section">
+    <div class="black-bg"></div>
+    <div class="red-bg"></div>
+    <div class="container-fluid">
+        <div class="main-header-wrapper">
+            <div class="logo-image">
+                <a href="/">
+                    <img src="assets/img/logo/logo.svg" alt="img">
+                </a>
+            </div>
+            <div class="main-header-items">
+                <div class="header-top-wrapper">
+                    <span><i class="fa-regular fa-clock"></i> 09:00 am - 06:00 pm</span>
+                    <div class="social-icon d-flex align-items-center">
+                        <span>Theo dõi chúng tôi:</span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div id="header-sticky" class="header-1">
+                    <div class="mega-menu-wrapper">
+                        <div class="header-main">
+                            <div class="logo">
+                                <a href="/" class="header-logo">
+                                    <img src="assets/img/logo/logo.svg" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="header-left">
+                                <div class="mean__menu-wrapper">
+                                    <div class="main-menu">
+                                        <nav id="mobile-menu">
+                                            <ul>
+                                                <li class="active menu-thumb">
+                                                    <a href="?page=menu">
+                                                        Thực đơn
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="?page=order">
+                                                        Đặt món
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="?page=booking">
+                                                        Đặt bàn
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="?page=contact">
+                                                        Liên hệ
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right d-flex justify-content-end align-items-center">
+                                <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
+                                <div class="header__cart">
+                                    <!-- <a href="#"> <i class="fa-sharp fa-regular fa-cart-shopping"></i> </a> -->
+                                    <a href="#" class="cart-link">
+                                        <i class="fa-sharp fa-regular fa-cart-shopping"></i>
+                                        <span class="cart-count">0</span> <!-- sẽ được cập nhật bằng JS -->
+                                    </a>
+                                    <div class="header__right__dropdown__wrapper">
+                                        <div class="header__right__dropdown__inner _cartOffcanvas">
+
+                                            <div class="single__header__right__dropdown prdc_ctg_product_content">
+
+                                                <div class="header__right__dropdown__img">
+                                                    <a href="#">
+                                                        <img loading="lazy" src="assets/img/blog/blogRecentThumb3_1.png"
+                                                            alt="photo"
+                                                            style="object-fit: cover; width: 72px; height: 72px;">
+                                                    </a>
+                                                </div>
+                                                <div class="header__right__dropdown__content">
+
+                                                    <a href="javascript:void(0)">Fried Chicken</a>
+                                                    <p class="_quantity">1 x <span class="price">$ 80.00</span></p>
+
+                                                </div>
+                                                <div class="header__right__dropdown__close">
+                                                    <a href="#"><i class="icofont-close-line"></i></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <p class="dropdown__price">Total: <span class="_totalPriceCart">$1,100.00</span>
+                                        </p>
+                                        <div class="header__right__dropdown__button">
+                                            <a href="?page=cart" class="theme-btn mb-2">Giỏ hàng</a>
+                                            <a href="?page=checkout" class="theme-btn style3">Thanh toán</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="?page=login" id="header-user"><i class="fal fa-user-circle"></i></a>
+                                <!-- <a href="?page=login" id="header-user">Chào nguyên, <i class="fal fa-sign-out-alt"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Search Area Start -->
+<div class="search-wrap">
+    <div class="search-inner">
+        <i class="fas fa-times search-close" id="search-close"></i>
+        <div class="search-cell">
+            <form method="get">
+                <div class="search-field-holder">
+                    <input type="search" class="main-search-input" placeholder="Tìm...">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .cart-link {
+        position: relative;
+        display: inline-block;
+    }
+
+    .cart-count {
+        position: absolute;
+        top: 8px;
+        left: -6px;
+        min-width: 15px;
+        height: 15px;
+        padding: 0 4px;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 15px;
+        border-radius: 50%;
+        background: orange;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

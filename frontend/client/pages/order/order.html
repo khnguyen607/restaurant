@@ -1,0 +1,138 @@
+<main>
+    <!-- Breadcumb Section   S T A R T -->
+    <div class="breadcumb-section">
+        <div class="breadcumb-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcumb-content">
+                            <h1 class="breadcumb-title">Đặt món</h1>
+                            <ul class="breadcumb-menu">
+                                <li><a href="/">Trang chủ</a></li>
+                                <li class="text-white">/</li>
+                                <li class="active">Đặt món</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shop Section S T A R T -->
+    <div class="shop-section section-padding fix">
+        <div class="shop-wrapper style1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 order-2 order-md-1 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="main-sidebar">
+                            <div class="single-sidebar-widget">
+                                <h5 class="widget-title">
+                                    Tìm kiếm
+                                </h5>
+                                <div class="search-widget">
+                                    <form action="#">
+                                        <input type="text" placeholder="Món ăn yêu thích" class="_product-search">
+                                        <button type="button" class="_product-search-button"><i class="fa-light fa-magnifying-glass"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="single-sidebar-widget">
+                                <h5 class="widget-title">
+                                    Lọc theo giá
+                                </h5>
+                                <div class="range__barcustom">
+                                    <div class="slider">
+                                        <div class="progress" style="left: 15.29%; right: 58.9%;"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500">
+                                        <input type="range" class="range-max" min="100" max="10000" value="7500">
+                                    </div>
+                                    <div class="range-items">
+                                        <div class="price-input">
+                                            <div class="price-wrapper d-flex align-items-center gap-1">
+                                                <div class="field">
+                                                    <span>Giá:</span>
+                                                </div>
+                                                <div class="field">
+                                                    <span></span>
+                                                    <input type="number" class="input-min" value="100">
+                                                </div>
+                                                <div class="separators">-</div>
+                                                <div class="field">
+                                                    <span></span>
+                                                    <input type="number" class="input-max" value="1000">
+                                                </div>
+                                                <a href="#" class="filter-btn mt-2 me-3">Lọc</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-8 order-1 order-md-2 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="sort-bar">
+                            <div class="row g-sm-0 gy-20 justify-content-between align-items-center">
+                                <div class="col-md">
+                                    <p class="woocommerce-result-count">Showing 1 - 12 of 30 Results</p>
+                                </div>
+
+                                <div class="col-md-auto">
+                                    <form class="woocommerce-ordering" method="get">
+                                        <select name="orderby" class="single-select" aria-label="Shop order">
+                                            <option value="menu_order" selected="selected">Default Sorting</option>
+                                            <option value="popularity">Sort by popularity</option>
+                                            <option value="rating">Sort by average rating</option>
+                                            <option value="date">Sort by latest</option>
+                                            <option value="price">Sort by price: low to high</option>
+                                            <option value="price-desc">Sort by price: high to low</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-grid" role="tabpanel"
+                                aria-labelledby="pills-grid-tab" tabindex="0">
+                                <div class="dishes-card-wrap style2 _product-list">
+                                    <div class="dishes-card style2 wow fadeInUp _product-item" data-wow-delay="0.2s">
+                                        <div class="dishes-thumb">
+                                            <img class="_product-image img-fluids" src="assets/img/dishes/dishes2_1.png" alt="thumb" style="width: 163px; height: 162px; object-fit: cover;">
+                                            <!-- <img class="_product-image img-fluids" src="assets/img/dishes/dishes2_1.png" alt="thumb"> -->
+                                            <div class="circle-shape"><img class="cir36"
+                                                    src="assets/img/food-items/circleShape.png" alt="shape"></div>
+                                        </div>
+                                        <div class="dishes-content">
+                                            <a href="#">
+                                                <h3 class="_product-title">Chicken Pizza</h3>
+                                            </a>
+                                            <h6 class="_product-price mt-2">$24.00</h6>
+                                            <a href="javascript:void(0)" class="theme-btn style6 _addCart"><i
+                                                    class="fa-regular fa-basket-shopping"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="page-nav-wrap text-center">
+                            <ul class="page-pagination">
+                                <li><a class="previous" href="shop.html"><i
+                                            class="fa-sharp fa-light fa-arrow-left-long"></i></a></li>
+                                <li><a class="page-numbers" href="shop.html">1</a></li>
+                                <li><a class="page-numbers active" href="shop.html">2</a></li>
+                                <li><a class="page-numbers" href="shop.html">3</a></li>
+                                <li><a class="page-numbers" href="shop.html">...</a></li>
+                                <li><a class="next" href="shop.html"><i
+                                            class="fa-sharp fa-light fa-arrow-right-long"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,169 @@
+<div class="container-fluid">
+	<div class="form-head d-flex mb-3 mb-md-4 align-items-start">
+		<div class="me-auto d-none d-lg-block">
+			<a href="javascript:void();" class="btn btn-primary btn-rounded add-staff" data-bs-toggle="modal"
+				data-bs-target="#exampleModal">+ Thêm người dùng</a>
+		</div>
+
+		<div class="input-group search-area ms-auto d-inline-flex me-3">
+			<input type="text" class="form-control" placeholder="Search here">
+			<div class="input-group-append">
+				<button type="button" class="input-group-text"><i class="flaticon-381-search-2"></i></button>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xl-12">
+			<div class="card">
+				<div class="card-body p-0">
+					<div class="table-responsive">
+						<table id="example5" class="table table-striped patient-list mb-4 dataTablesCard fs-14">
+							<thead>
+								<tr>
+									<th>Họ tên</th>
+									<th>Tên đăng nhập</th>
+									<th>Hạng</th>
+									<th>Quyền</th>
+									<th class="text-end">Thao tác</th>
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr>
+									<td class="patient-info ps-0 text-nowrap">Matthew</td>
+									<td class="_userUserName"></td>
+									<td class="_userTier">9876512345</td>
+									<td class="text-primary _userRole">1310 Glenwood Avenue</td>
+
+									<td class="text-end">
+										<a style="cursor: pointer;" class="edit-staff me-3" data-bs-toggle="modal"
+											data-bs-target="#editUserModal"><i
+												class="fa fa-pencil fs-18 text-success"></i></a>
+										<a href="javascript:void(0);" class="_btnDelete"><i
+												class="fa fa-trash fs-18 text-danger"></i></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Người dùng</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+				</button>
+			</div>
+			<div class="modal-body">
+				<form id="_addUserForm">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="form-group">
+								<label for="_userName" class="col-form-label">Họ tên:</label>
+								<input type="text" class="form-control" id="_userName" name="Name"
+									placeholder="Nhập tên của người dùng">
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="form-group">
+								<label for="_userUserName" class="col-form-label">Tên đăng nhập:</label>
+								<input type="text" class="form-control" id="_userUserName" name="UserName"
+									placeholder="Nhập tên đăng nhập">
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="form-group">
+								<label for="_userPassword" class="col-form-label">Mật khẩu</label>
+								<input type="text" class="form-control" id="_userPassword" name="Password"
+									placeholder="Nhập mật khẩu">
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="form-group">
+								<label for="_userRole" class="col-form-label">Quyền</label>
+								<select class="form-control" id="_userRole" name="Role">
+									<option>Admin</option>
+									<option>Client</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="form-group">
+								<label for="_userTier" class="col-form-label">Hạng thành viên</label>
+								<input type="text" class="form-control" id="_userTier" name="Tier"
+									value="Thành viên mới">
+							</div>
+						</div>
+					</div>
+
+
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Đóng</button>
+				<button type="button" class="btn btn-primary">Thêm</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="editUserModalLabel">Chỉnh sửa</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+				</button>
+			</div>
+			<div class="modal-body">
+				<form id="_editUserForm" method="post">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="form-group">
+								<label for="_edituserName" class="col-form-label">Họ tên:</label>
+								<input type="text" class="form-control" id="_edituserName" name="Name"
+									placeholder="Nhập tên của người dùng">
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="form-group">
+								<label for="_edituserUserName" class="col-form-label">Tên đăng nhập:</label>
+								<input readonly type="text" class="form-control" id="_edituserUserName">
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="form-group">
+								<label for="_edituserPassword" class="col-form-label">Mật khẩu</label>
+								<input type="text" class="form-control" id="_edituserPassword" name="Password"
+									placeholder="Nhập mật khẩu mới">
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="form-group">
+								<label for="_edituserRole" class="col-form-label">Quyền</label>
+								<input readonly type="text" class="form-control" id="_edituserRole">
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="form-group">
+								<label for="_edituserTier" class="col-form-label">Hạng thành viên</label>
+								<input type="text" class="form-control" id="_edituserTier" name="Tier"
+									value="Thành viên mới">
+							</div>
+						</div>
+					</div>
+
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Đóng</button>
+				<button type="submit" class="btn btn-primary">Thêm</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>

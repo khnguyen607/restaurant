@@ -1,0 +1,143 @@
+<!-- row -->
+<div class="container-fluid">
+    <div class="form-head d-flex mb-3 mb-md-4 align-items-start">
+        <div class="me-auto d-lg-block">
+            Trạng thái đơn:
+            <select id="selectOrderStatus">
+                <option value="Tất cả">Tất cả</option>
+                <option value="Chờ duyệt">Chờ duyệt</option>
+                <option value="Đã duyệt">Đã duyệt</option>
+                <option value="Đang giao hàng">Đang giao hàng</option>
+                <option value="Đã giao hàng">Đã giao hàng</option>
+                <option value="Đơn bị hủy">Đơn bị hủy</option>
+            </select>
+        </div>
+        <div class="input-group search-area ms-auto d-inline-flex me-2">
+            <input type="text" class="form-control" placeholder="Search here">
+            <div class="input-group-append">
+                <button type="button" class="input-group-text"><i class="flaticon-381-search-2"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="table-responsive">
+                <table id="example5" class="table shadow-hover doctor-list table-bordered mb-4 dataTablesCard fs-14">
+                    <thead>
+                        <tr>
+                            <th class="text-nowrap">Mã hóa đơn</th>
+                            <th class="text-nowrap">Tên người đặt</th>
+                            <th class="text-nowrap">Thời gian đặt hàng</th>
+                            <th class="text-nowrap">Số tiền</th>
+                            <th class="text-nowrap">Trạng thái</th>
+                            <th class="text-nowrap">Đổi trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="_orderID">#P-00012</td>
+                            <td class="_orderGuestName">#P-00012</td>
+                            <td class="_orderDate">26/02/2020, 12:42 AM</td>
+                            <td class="_orderTotalPrice">Dr. Samantha</td>
+                            <td class="_orderStatus">
+                                <div class="d-flex align-items-center">
+                                    <span class="font-w600">Chưa xác nhận</span>
+                                </div>
+                            </td>
+                            <td class="_buttonChangeStatus">
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:void(0);" class="btn light btn-rounded btn-sm text-nowrap">Xác
+                                        nhận đơn</a>
+                                    <div class="dropdown ms-auto c-pointer text-end">
+                                        <div class="btn-link" data-bs-toggle="dropdown">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11Z"
+                                                    stroke="#3E4954" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18Z"
+                                                    stroke="#3E4954" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4Z"
+                                                    stroke="#3E4954" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item _btnDetail" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Chi tiết</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Xóa</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hóa đơn chi tiết</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="_orderID">Mã hóa đơn: HD12345</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tên sản phẩm</th>
+                            <th scope="col">Giá</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Đơn vị tính</th>
+                            <th scope="col">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sản phẩm A</td>
+                            <td>100,000</td>
+                            <td>2</td>
+                            <td>Cái</td>
+                            <td>200,000</td>
+                        </tr>
+                        <tr>
+                            <td>Sản phẩm B</td>
+                            <td>150,000</td>
+                            <td>1</td>
+                            <td>Cái</td>
+                            <td>150,000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="text-end fw-bold">Tổng cộng:</td>
+                            <td class="_TotalPriceOrderDetail">350,000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="mt-4">
+                    <h4>Thông tin khách hàng:</h4>
+                    <p class="_guestName">Họ và tên: Nguyễn Văn A</p>
+                    <p class="_guestPhone">Số điện thoại: 0901234567</p>
+                    <p class="_guestEmail">Email: khnguyen.job@gmail.com</p>
+                    <p class="_guestAddress">Địa chỉ: Số 123, đường ABC, quận XYZ, TP. Hồ Chí Minh</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
